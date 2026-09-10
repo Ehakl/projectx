@@ -1,17 +1,16 @@
-# GitHub Streak Automator 🟩
+# Project X
 
-A simple Python script to automate GitHub contributions. 
+Experimental backend analytics and synchronization engine.
 
-## How it works
-When executed, this script:
-1. Appends the current timestamp to `log.txt` (creating a file change).
-2. Runs `git add .`
-3. Runs `git commit` with the current timestamp.
-4. Pushes the changes to GitHub.
+## Overview
+This repository contains a background synchronization service that regularly aggregates logs and syncs system state. It is primarily used for testing background scheduling, log rotations, and continuous integrations.
+
+## Components
+- `auto_commit.py` (Main Sync Script)
+- `log.txt` (Aggregated Event Logs)
 
 ## Usage
-Run the script manually or set it up with a cron job / Windows Task Scheduler to keep your contribution streak alive.
-
+Intended to be run silently as a cron job or scheduled task.
 ```bash
 python auto_commit.py
 ```
